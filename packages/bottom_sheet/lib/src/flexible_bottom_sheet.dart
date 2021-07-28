@@ -182,13 +182,7 @@ class _FlexibleBottomSheetState extends State<FlexibleBottomSheet>
           _controller =
               controller as FlexibleDraggableScrollableSheetScrollController;
 
-          return AnimatedPadding(
-            duration: const Duration(milliseconds: 100),
-            // padding: EdgeInsets.only(
-            //   bottom: MediaQuery.of(context).viewInsets.bottom,
-            // ),
-            child: _buildContent(context),
-          );
+          return _buildContent(context);
         },
         expand: widget.isExpand,
       ),
